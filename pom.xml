@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.callsign</groupId>
     <artifactId>callsign-apigateway</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>callsign-apigateway</name>
     <description>callsign-apigateway</description>
     <properties>
