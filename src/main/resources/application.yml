@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: authServer
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/api/token/**
+        - id: userService
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/api/users/**
+        - id: customerSupportService
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/api/tickets/**
